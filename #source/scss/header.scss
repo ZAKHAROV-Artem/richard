@@ -1,0 +1,109 @@
+@import 'help';
+
+.header {
+    background: linear-gradient(287.15deg, #450E4B 0%, #3C0C41 24.48%,
+            rgba(207, 0, 99, 0) 100%), #CF0063;
+    min-height: 100vh;
+
+    padding: 30px 25px 0px 25px;
+
+    color: white;
+    position: relative;
+    z-index: 1;
+}
+
+.header__menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .menu__logo {
+        margin-right: 20px;
+    }
+    .menu__list {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        .menu__item {
+            margin-right: 30px;
+            &:last-child{
+                margin: 0;
+            }
+            .item__link {
+                position: relative;
+                &:after{
+                    content: '';
+                    width: 70%;
+                    height: 1px;
+                    background-color: white;
+                    position: absolute;
+                    bottom: -10px;
+                    left: 50%;
+                    transform: translate(-50%);
+                    opacity: 0;
+                    transition: 0.7s;
+                }
+                &:hover:after{
+                    transition: 0.4s;
+                    bottom: -5px;
+                    opacity: 1;
+                }
+            }
+        }
+    }
+}
+.header__title {
+    margin-top: 226px;
+}
+.header__subtitle {
+    margin-top: -50px;
+    margin-bottom: 50px;
+}
+.header__btn {
+    width: 170px;
+    height: 66px;
+    background-color: $pink;
+    padding: 20px 40px;
+    transition: 0.7s;
+    &:hover{
+        background-color: #7d1688;
+        transition: 0.5s;
+    }
+}
+.header__img{
+    position: absolute;
+    bottom: 0;
+    right: 44px;
+    z-index: -1;
+}
+.header__scroll {
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    transform: translate(-50%);
+
+    animation-name: scroll;
+    animation-duration: 3s;
+    animation-timing-function: ease-in-out,linear;
+    animation-iteration-count: infinite;
+}
+@keyframes scroll {
+    0%{
+        bottom: 30px;
+    }
+    50%{
+        bottom: 50px;
+    }
+    100%{
+        bottom: 30px;
+    }
+}
+@media screen and (max-width:31.25em) {
+    .menu__item{
+        margin-bottom: 15px;
+    }
+}
+@media screen and (max-width:18.75em) {
+    .header__title{
+        margin-top: 100px;
+    }
+}

@@ -1,0 +1,116 @@
+@import 'help';
+
+.card-sec__part,.dish__card {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    margin:160px 20px 0 20px;
+
+    &:first-child{
+        margin-top: 130px;
+    }
+    img{
+        width: 100%;
+        height: auto;
+    }
+    .card__text {
+        max-width: 310px;
+        margin-right: 30px;
+        &:nth-child(even){
+            margin-right: 0;
+            margin-left: 30px;
+        }
+    
+        .text__small {
+            color:$light-gray;
+            text-transform: uppercase;
+        }
+        .text__title {
+            margin-top: 30px;
+        }
+        .text__ {
+            margin-top: 22px;
+            color:$gray;
+            line-height: 1.875rem;
+        }
+    }
+}
+.card-sec__part{
+    img{
+        max-width: 25em;
+    }
+}
+.dish__card{
+    img{
+        max-width: 600px;
+    }
+}
+@media screen and (max-width:47.938em){
+    .card-sec__part{
+        img{
+            max-width: 16.875rem;
+        }
+    }
+    .dish__card{
+        img{
+            max-width: 25rem;
+        }
+    }
+}
+@media screen and(max-width: 43.75em) {
+    .dish__card{
+        img{
+            max-width: 18.75rem;
+        }
+    }
+}
+@media screen and (max-width:36.25em){
+    .card-sec__part{
+        img{
+            max-width: 13.125rem;
+        }
+    }
+    .card-sec__part,.dish__card {
+        .card__text{
+            .text__title{
+                font-size: 28px;
+                margin-top: 15px;
+            }
+            .text__small{
+                font-size: 9px;
+            }
+            .text__{
+                font-size: 13px;
+                margin-top: 10px;
+            }
+        }
+    }
+}
+@media screen and (max-width:31.25em){
+    .card-sec__part{
+        img{
+            max-width: 13.125em;
+        }
+    }
+    .card-sec__part,.dish__card {
+        flex-wrap: wrap;
+        text-align: center;
+        .card__text{
+            margin-right: 0;
+            &:nth-child(even){
+                margin-left: 0;
+                margin-top: 20px;
+            }
+            .text__title{
+                font-size: 28px;
+            }
+            .text__small{
+                font-size: 9px;
+            }
+            .text__{
+                font-size: 13px;
+            }
+        }
+    }
+}

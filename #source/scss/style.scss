@@ -1,0 +1,21 @@
+@import 'null-style';
+@import 'help';
+body{
+    font-family: 'Gothic A1',sans-serif;
+    overflow-x: hidden;
+    font-size: 1rem;
+}
+
+._container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+@import 'header';
+@import 'sec-01';
+@import 'card-sec';
+@import 'sec-rate';
+@import 'sec-comment';
+@import 'our-clients';
+@import 'get-in-touch';
+@import 'footer';

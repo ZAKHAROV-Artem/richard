@@ -1,0 +1,78 @@
+.text-80 {
+   font-size: 5rem;
+   line-height: 5rem;
+}
+
+.text-59 {
+   font-size: 3.688rem;
+   line-height: 5.625rem;
+}
+
+.text-38 {
+   font-size: 2.375rem;
+   line-height: 3rem;
+}
+
+.text-30 {
+   font-size: 1.875rem;
+   line-height: 2.75rem;
+}
+
+.text-24 {
+   font-size: 1.5rem;
+   line-height: 2.5rem;
+}
+
+.text-12 {
+   font-size: 0.875rem;
+   line-height: 1.25rem;
+   letter-spacing: 0.125rem;
+}
+
+.text-18 {
+   font-size: 1.125rem;
+   line-height: 1.5rem;
+}
+
+.bold {
+   font-weight: 700;
+}
+
+.thin {
+   font-weight: 100;
+}
+
+@media screen and (max-width: 31.25em) {
+   .text-80 {
+      font-size: 50px;
+   }
+}
+@media screen and (max-width: 20.625em) {
+   .text-80 {
+      font-size: 40px;
+   }
+
+   .text-30 {
+      font-size: 20px;
+   }
+}
+@media screen and (max-width: 26.563em) {
+   .text-59 {
+      font-size: 40px;
+   }
+
+   .text-18 {
+      font-size: 14px;
+   }
+}
+.our-clients {
+   width: 100%;
+   position: relative;
+}
+.our-clients img {
+   position: absolute;
+   bottom: 0;
+   left: 50%;
+   -webkit-transform: translate(-50%);
+           transform: translate(-50%);
+}

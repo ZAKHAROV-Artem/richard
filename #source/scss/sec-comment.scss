@@ -1,0 +1,42 @@
+@import 'help';
+
+.sec-comment {
+    margin-right: 20px;
+    margin-left: 20px;
+    display: grid;
+    grid-template-columns: 1fr;
+
+    img {
+        margin-top: 160px;
+        justify-self: center;
+        margin-bottom: 65px;
+    }
+
+    .com__slider {
+        justify-self: center;
+        display: inherit;
+        max-width: 80%;
+        text-align: center;
+    }
+
+    .slider__item {
+        .item__bottom {
+            margin-top: 32px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            line-height: 30px;
+            color: $gray;
+            font-size: 1rem;
+
+            .gray-line {
+                width: 20px;
+                height: 2px;
+                background-color: $light-gray;
+                margin-left: 10px;
+                margin-right: 10px;
+            }
+        }
+    }
+
+}
